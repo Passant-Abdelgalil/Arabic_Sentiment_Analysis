@@ -1,3 +1,6 @@
-__pycache__/
-*.csv
-*.pdf
+Dataset/dev.csv
+Dataset/train.csv
+*.pyc
+Dataset/train_duplicated_rows.csv
+Dataset/dev_duplicated_rows.csv
+env/
