@@ -57,8 +57,8 @@ def clean_tweet(tweet):
     tweet = re.sub(r'[\(\)"]', "", tweet)
     # dediacterize
     tweet = dediac_ar(tweet)
-    # normaliz ه to ة
-    tweet = normalize_teh_marbuta_ar(tweet)
+    # TODO: (It is inversed) normalize ه to ة
+    # tweet = normalize_teh_marbuta_ar(tweet)
 
     return tweet
 
