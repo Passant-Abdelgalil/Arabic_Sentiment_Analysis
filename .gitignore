@@ -4,3 +4,5 @@ Dataset/train.csv
 Dataset/train_duplicated_rows.csv
 Dataset/dev_duplicated_rows.csv
 env/
+cc.ar.300.bin
+cc.ar.300.bin.gz
