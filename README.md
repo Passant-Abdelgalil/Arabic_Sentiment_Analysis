@@ -156,7 +156,7 @@ Note: Precision, Recall and F1 Score are calculated using the macro average meth
 ## 4 References
 
 - [A review of sentiment analysis research in Arabic language](https://www.sciencedirect.com/science/article/abs/pii/S0167739X19311537)
-- [Preprocessing Arabic text on social media] (https://www.sciencedirect.com/science/article/pii/S2405844021002966)
+- [Preprocessing Arabic text on social media](https://www.sciencedirect.com/science/article/pii/S2405844021002966)
 - [arcovidvac: A Twitter Dataset for Arabic COVID-19 Vaccine Stance Classification](https://arxiv.org/pdf/2201.06496.pdf)
 - [AraStance: A Multi-Country and Multi-Domain Dataset of Arabic Stance Detection for Fact Checking](https://aclanthology.org/2021.nlp4if-1.9.pdf)
 - [A review of sentiment analysis research in Arabic language](https://www.sciencedirect.com/science/article/abs/pii/S0167739X19311537)
