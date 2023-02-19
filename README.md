@@ -35,7 +35,8 @@ A Natural Language Processing model that Analyzes Arabic tweets (with arbitrary 
 
 # Project Pipeline
 
-` <image/> `
+![piepline](https://user-images.githubusercontent.com/69261710/219968758-c80ff8be-e18f-4f3d-b8f2-7fa45b406028.png)
+
 
 ## 1. Methodology
 
