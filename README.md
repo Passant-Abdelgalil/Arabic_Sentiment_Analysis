@@ -101,6 +101,8 @@ Here we highlight some of the approaches and combinations and their results on t
 
 For all the approaches, the different output options of the preprocessing steps were tried and we found that they had a very minor impact on the results. For instance, the difference between using the dialect detection and not using it was always about 0.01 in the F1 score. the same goes for keeping the emojis and digits in the text or not.
 
+The main metric used to evaluate the models is the F1 score.
+
 ### 2.1 Stance Classification
 
 That is, over the 3 classes: positive, negative and neutral.
@@ -115,8 +117,8 @@ That is, over the 3 classes: positive, negative and neutral.
 | LSTM (FastText Embeddings)                | 0.79 | 0.35 | 0.33 | 0.30 |
 | RNN (FastText Embeddings)                 | 0.76 | 0.47 | 0.41 | 0.40 |
 | Transformer-based Models                  |______|______|______|______|
-| **MarBERT**                               | 0.83 | 0.69 | 0.60 | **0.63** |
-| **araBERT**                               | 0.83 | 0.63 | 0.62 | **0.63** |
+| MarBERT                                   | 0.83 | 0.69 | 0.60 | **0.63** |
+| araBERT                                   | 0.83 | 0.63 | 0.62 | **0.63** |
 
 
 Note: Precision, Recall and F1 Score are calculated using the macro average method.
@@ -135,8 +137,8 @@ That is, over the 10 classes, news, celebrities, plan, request, rumor, advice, r
 | LSTM (FastText Embeddings)                | 0.51 | 0.05 | 0.10 | 0.07 |
 | RNN (FastText Embeddings)                 | 0.60 | 0.17 | 0.18 | 0.17 |
 | Transformer-based Models:                 |______|______|______|______|
-| **MarBERT**                               | 0.69 | 0.41 | 0.35 | 0.37 |
-| **araBERT**                               | 0.68 | 0.41 | 0.36 | 0.38 |
+| MarBERT                                   | 0.69 | 0.41 | 0.35 | 0.37 |
+| araBERT                                   | 0.68 | 0.41 | 0.36 | 0.38 |
 
 
 Note: Precision, Recall and F1 Score are calculated using the macro average method.
