@@ -96,3 +96,59 @@ We have also used FastText word embeddings to feed the RNN and LSTM models
 ### 1.3 Building Models
 
 ## 2 Results
+
+Here we highlight some of the approaches and combinations and their results on the given data. It is worth mentioning that both the training and testing datasets had a lot of misclassifications.
+
+For all the approaches, the different output options of the preprocessing steps were tried and we found that they had a very minor impact on the results. For instance, the difference between using the dialect detection and not using it was always about 0.01 in the F1 score. the same goes for keeping the emojis and digits in the text or not.
+
+### 2.1 Stance Classification
+
+That is, over the 3 classes: positive, negative and neutral.
+
+| Approach   | Accuracy | Precision | Recall | **F1 Score** |
+| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|
+| Classical Models (with TF-IDF)            |______|______|______|______|
+| Random Forest (TF-IDF - no SMOTE)         | 0.80 | 0.65 | 0.37 | 0.37 |
+| Multinomial Naive Bayes (TF-IDF - SMOTE)  | 0.81 | 0.60 | 0.57 | 0.59 |
+| SVM (TF-IDF - SMOTE, Sigmoid Kernel)      | 0.82 | 0.62 | 0.61 | 0.61 |
+| Sequential Models (with FastText)         |______|______|______|______|
+| LSTM (FastText Embeddings)                | 0.79 | 0.35 | 0.33 | 0.30 |
+| RNN (FastText Embeddings)                 | 0.76 | 0.47 | 0.41 | 0.40 |
+| Transformer-based Models                  |______|______|______|______|
+| **MarBERT**                               | 0.83 | 0.69 | 0.60 | **0.63** |
+| **araBERT**                               | 0.83 | 0.63 | 0.62 | **0.63** |
+
+
+Note: Precision, Recall and F1 Score are calculated using the macro average method.
+
+### 2.2 Category Classification
+
+That is, over the 10 classes, news, celebrities, plan, request, rumor, advice, restriction, personal, unrelated and others.
+
+| Approach   | Accuracy | Precision | Recall | **F1 Score** |
+| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|
+| Classical Models (with TF-IDF)            |______|______|______|______|
+| Random Forest (TF-IDF - no SMOTE)         | 0.58 | 0.34 | 0.17 | 0.18 |
+| Multinomial Naive Bayes (TF-IDF - SMOTE)  | 0.62 | 0.44 | 0.36 | **0.39** |
+| SVM (TF-IDF - SMOTE, Sigmoid Kernel)      | 0.64 | 0.47 | 0.37 | **0.40** |
+| Sequential Models (with FastText)         |______|______|______|______|
+| LSTM (FastText Embeddings)                | 0.51 | 0.05 | 0.10 | 0.07 |
+| RNN (FastText Embeddings)                 | 0.60 | 0.17 | 0.18 | 0.17 |
+| Transformer-based Models:                 |______|______|______|______|
+| **MarBERT**                               | 0.69 | 0.41 | 0.35 | 0.37 |
+| **araBERT**                               | 0.68 | 0.41 | 0.36 | 0.38 |
+
+
+Note: Precision, Recall and F1 Score are calculated using the macro average method.
+
+## 3 Conclusions & Future work
+
+
+
+## 4 References
+
+- [A review of sentiment analysis research in Arabic language](https://www.sciencedirect.com/science/article/abs/pii/S0167739X19311537)
+- [arcovidvac: A Twitter Dataset for Arabic COVID-19 Vaccine Stance Classification](https://arxiv.org/pdf/2201.06496.pdf)
+- [AraStance: A Multi-Country and Multi-Domain Dataset of Arabic Stance Detection for Fact Checking](https://aclanthology.org/2021.nlp4if-1.9.pdf)
+- [A review of sentiment analysis research in Arabic language](https://www.sciencedirect.com/science/article/abs/pii/S0167739X19311537)
+- [Camel Tools](https://camel-tools.readthedocs.io/)
