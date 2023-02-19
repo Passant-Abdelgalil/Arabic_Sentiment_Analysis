@@ -109,16 +109,16 @@ That is, over the 3 classes: positive, negative and neutral.
 
 | Approach   | Accuracy | Precision | Recall | **F1 Score** |
 | ------------- |:-------------:|:-------------:|:-------------:|:-------------:|
-| Classical Models (with TF-IDF)            |______|______|______|______|
-| Random Forest (TF-IDF - no SMOTE)         | 0.80 | 0.65 | 0.37 | 0.37 |
-| Multinomial Naive Bayes (TF-IDF - SMOTE)  | 0.81 | 0.60 | 0.57 | 0.59 |
-| SVM (TF-IDF - SMOTE, Sigmoid Kernel)      | 0.82 | 0.62 | 0.61 | 0.61 |
-| Sequential Models (with FastText)         |______|______|______|______|
-| LSTM (FastText Embeddings)                | 0.79 | 0.35 | 0.33 | 0.30 |
-| RNN (FastText Embeddings)                 | 0.76 | 0.47 | 0.41 | 0.40 |
-| Transformer-based Models                  |______|______|______|______|
-| MarBERT                                   | 0.83 | 0.69 | 0.60 | **0.63** |
-| araBERT                                   | 0.83 | 0.63 | 0.62 | **0.63** |
+| Classical Models (with TF-IDF):               |______|______|______|______|
+| **Random Forest (TF-IDF - no SMOTE)**         | 0.80 | 0.65 | 0.37 | 0.37 |
+| **Multinomial Naive Bayes (TF-IDF - SMOTE)**  | 0.81 | 0.60 | 0.57 | 0.59 |
+| **SVM (TF-IDF - SMOTE, Sigmoid Kernel)**      | 0.82 | 0.62 | 0.61 | 0.61 |
+| Sequential Models (with FastText):            |______|______|______|______|
+| **LSTM (FastText Embeddings)**                | 0.79 | 0.35 | 0.33 | 0.30 |
+| **RNN (FastText Embeddings)**                 | 0.76 | 0.47 | 0.41 | 0.40 |
+| Transformer-based Models:                     |______|______|______|______|
+| **MarBERT**                                   | 0.83 | 0.69 | 0.60 | **0.63** |
+| **araBERT**                                   | 0.83 | 0.63 | 0.62 | **0.63** |
 
 
 Note: Precision, Recall and F1 Score are calculated using the macro average method.
@@ -129,16 +129,16 @@ That is, over the 10 classes, news, celebrities, plan, request, rumor, advice, r
 
 | Approach   | Accuracy | Precision | Recall | **F1 Score** |
 | ------------- |:-------------:|:-------------:|:-------------:|:-------------:|
-| Classical Models (with TF-IDF)            |______|______|______|______|
-| Random Forest (TF-IDF - no SMOTE)         | 0.58 | 0.34 | 0.17 | 0.18 |
-| Multinomial Naive Bayes (TF-IDF - SMOTE)  | 0.62 | 0.44 | 0.36 | **0.39** |
-| SVM (TF-IDF - SMOTE, Sigmoid Kernel)      | 0.64 | 0.47 | 0.37 | **0.40** |
-| Sequential Models (with FastText)         |______|______|______|______|
-| LSTM (FastText Embeddings)                | 0.51 | 0.05 | 0.10 | 0.07 |
-| RNN (FastText Embeddings)                 | 0.60 | 0.17 | 0.18 | 0.17 |
-| Transformer-based Models:                 |______|______|______|______|
-| MarBERT                                   | 0.69 | 0.41 | 0.35 | 0.37 |
-| araBERT                                   | 0.68 | 0.41 | 0.36 | 0.38 |
+| Classical Models (with TF-IDF):               |______|______|______|______|
+| **Random Forest (TF-IDF - no SMOTE)**         | 0.58 | 0.34 | 0.17 | 0.18 |
+| **Multinomial Naive Bayes (TF-IDF - SMOTE)**  | 0.62 | 0.44 | 0.36 | **0.39** |
+| **SVM (TF-IDF - SMOTE, Sigmoid Kernel)**      | 0.64 | 0.47 | 0.37 | **0.40** |
+| Sequential Models (with FastText):            |______|______|______|______|
+| **LSTM (FastText Embeddings)**                | 0.51 | 0.05 | 0.10 | 0.07 |
+| **RNN (FastText Embeddings)**                 | 0.60 | 0.17 | 0.18 | 0.17 |
+| Transformer-based Models:                     |______|______|______|______|
+| **MarBERT**                                   | 0.69 | 0.41 | 0.35 | 0.37 |
+| **araBERT**                                   | 0.68 | 0.41 | 0.36 | 0.38 |
 
 
 Note: Precision, Recall and F1 Score are calculated using the macro average method.
