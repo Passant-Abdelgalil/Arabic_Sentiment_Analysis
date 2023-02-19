@@ -93,7 +93,50 @@ Represented the corpus as a Bag of Words using `sklearn.feature_extraction.text.
 4- Word Embeddings
 
 We have also used FastText word embeddings to feed the RNN and LSTM models
+
 ### 1.3 Building Models
+
+| Classical Models | Sequence Models  | Transformer-Based Models |
+| ----             |  ----            | -----                    |
+| Multinomial Naive Base | RNN  | MarBERT |
+| SVM | LSTM  | AraBERT|
+| Random Forest | | |
+
+- SVM hyperparameter tuning
+
+We used GridSearchCV sklearn function for hyperparameter tuning with the following search space:
+
+| Parameter | Possible Values |
+| -----     |   ------        |
+| C         |   [0.1, 1, 10]  |
+| Gamma     |   [0.1, 1]      |
+| Kernel    | ['Sigmoid', 'rbf', 'linear', 'poly'] |
+| Tol       | [0.001, 0.0001] |
+
+- AraBert Training Arguments
+
+| Argument | Value |
+| -----    | ----  |
+| learning_rate |  1e-4|
+| optimizer | Adam Optimizer|
+| adam_epsilon  | 1e-8 |
+| batch size | 64 |
+| epochs  | 5 |
+| metric  | macro F1 |
+
+- MarBert Training Arguments
+
+| Argument | Value |
+| -----    | ----  |
+| learning_rate |  2e-06|
+| optimizer | Adam Optimizer|
+| adam_epsilon  | 2e-06|
+| batch size | 32 |
+| epochs  | 5 |
+| metric  | macro F1 |
+
+
+
 
 ## 2 Results
 
