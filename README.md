@@ -145,11 +145,18 @@ Note: Precision, Recall and F1 Score are calculated using the macro average meth
 
 ## 3 Conclusions & Future work
 
+- Transformer-based models and Classical models with TF-IDF both worked surprisingly well on the stance problem.
 
+- using SMOTE balancing on the TF-IDF embeddings of the training data almost always improved the results.
+
+- Our preprocessing produced a variety of options (removing vs. keeping emojis and digits, translating them to text, appending the dialect as a feature, etc.). But, upon testing them, we found that all of them had very minor effects on the results.
+
+- Our straightforward usage of Sequential models (LSTM and RNN) did not perform well. It might be worthwhile to try and play around with the hyperparameters and other details of the models to see if we can get better results. Since we did not have a lot of time to invest in them.
 
 ## 4 References
 
 - [A review of sentiment analysis research in Arabic language](https://www.sciencedirect.com/science/article/abs/pii/S0167739X19311537)
+- [Preprocessing Arabic text on social media] (https://www.sciencedirect.com/science/article/pii/S2405844021002966)
 - [arcovidvac: A Twitter Dataset for Arabic COVID-19 Vaccine Stance Classification](https://arxiv.org/pdf/2201.06496.pdf)
 - [AraStance: A Multi-Country and Multi-Domain Dataset of Arabic Stance Detection for Fact Checking](https://aclanthology.org/2021.nlp4if-1.9.pdf)
 - [A review of sentiment analysis research in Arabic language](https://www.sciencedirect.com/science/article/abs/pii/S0167739X19311537)
