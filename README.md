@@ -77,20 +77,22 @@ After that we proceed to the data preprocessing step which is done on 3 levels
 ### 1.2 Feature Extraction
 We have extracted the following features to be used for classification:
 
-   1-TF-IDF
-Have extracted the Term Frequency-Inverse Term Frequency measure for unigrams, bigrams, trigrams, a combination of unigrams and bigrams, and a combination of unigrams and trigrams using `sklearn.feature_extraction.text.TfidfVectorizer` 
-    
-   2- BOW
+1-TF-IDF
+   
+   Have extracted the Term Frequency-Inverse Term Frequency measure for unigrams, bigrams, trigrams, a combination of unigrams and bigrams, and a combination of unigrams and trigrams using `sklearn.feature_extraction.text.TfidfVectorizer` 
+
+2- BOW
+   
 Represented the corpus as a Bag of Words using `sklearn.feature_extraction.text.CountVectorizer`
     
-   3- Dialect
+3- Dialect
 - We thought that there could be a correlation between if the dialect was MSA or not and with the category being from a more formal source like “Info news”, “plans”
 - Used camel tools dialect detector to predict the dialect and used it as an additional feature
 - Did not have a significant effect
     
-   4- Word Embeddings
-We have also used FastText word embeddings to feed the RNN and LSTM models
+4- Word Embeddings
 
+We have also used FastText word embeddings to feed the RNN and LSTM models
 ### 1.3 Building Models
 
 ## 2 Results
